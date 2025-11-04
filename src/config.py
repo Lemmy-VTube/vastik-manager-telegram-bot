@@ -5,7 +5,7 @@ from pydantic import Field, SecretStr
 from pydantic_settings import BaseSettings, SettingsConfigDict
 
 ROOT_DIR = Path(__file__).parent.parent
-ENV_FILE = ROOT_DIR / "src" / ".env"
+ENV_FILE = ROOT_DIR / ".env"
 BABEL_CONFIG_FILE = ROOT_DIR / "babel.cfg"
 
 LOCALES_DIR = ROOT_DIR / "locales"
