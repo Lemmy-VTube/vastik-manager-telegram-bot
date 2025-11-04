@@ -14,7 +14,7 @@ logger = getLogger(__name__)
 class Schedule:
     photo_id: str
     message_streamer_text: str
-    created_at: datetime
+    updated_at: datetime
 
 
 class ScheduleService:
@@ -39,11 +39,11 @@ class ScheduleService:
                         logger.debug("No schedule data found in response")
                         return None
 
-                    created_at = datetime.fromisoformat(schedule_data["created_at"])
+                    updated_at = datetime.fromisoformat(schedule_data["updated_at"])
                     schedule = Schedule(
                         photo_id=schedule_data["photo_id"],
                         message_streamer_text=schedule_data["message_streamer_text"],
-                        created_at=created_at,
+                        updated_at=updated_at,
                     )
                     logger.debug(f"Schedule parsed successfully: {schedule}")
                     return schedule

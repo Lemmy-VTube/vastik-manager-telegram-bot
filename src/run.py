@@ -10,7 +10,7 @@ logger = getLogger(__name__)
 
 async def main() -> None:
     setup_logging()
-    #await SettingsBotManager(bot).setup()
+    await SettingsBotManager(bot).setup()
 
     try:
         await dp.start_polling(bot)

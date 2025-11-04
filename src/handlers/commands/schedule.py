@@ -27,14 +27,14 @@ async def cmd_schedule(message: Message | CallbackQuery, state: FSMContext) -> N
     except TelegramBadRequest:
         return await reply_no_schedule(message)
 
-    updated_day = schedule.created_at.weekday()
+    updated_day = schedule.updated_at.weekday()
     valid_days = config_telegram_bot.VALID_DAYS.get(updated_day, 7)
-    expiry_date = schedule.created_at + timedelta(days=valid_days)
+    expiry_date = schedule.updated_at + timedelta(days=valid_days)
     is_old = datetime.now() > expiry_date
 
     if is_old:
         caption = _("message_schedule_old").format(
-            schedule_created_at=schedule.created_at.strftime("%d.%m.%Y %H:%M")
+            schedule_created_at=schedule.updated_at.strftime("%d.%m.%Y %H:%M")
         )
     else:
         caption = _("message_schedule_actual")
