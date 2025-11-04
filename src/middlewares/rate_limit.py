@@ -28,7 +28,7 @@ class RateLimitMiddleware(BaseMiddleware):
         data: Dict[str, Any],
     ) -> Any:
         if isinstance(event, Message) and event.text and event.text.startswith("/"):
-            user_id = event.from_user.id
+            user_id = event.from_user.id  # type: ignore
             now = int(time())
             ban_until = await redis_service.get_ban(f"tg:{user_id}")
 

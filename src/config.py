@@ -19,25 +19,24 @@ log_filename_time = now.strftime("%Y-%m-%d_%H-%M-%S")
 if not ENV_FILE.exists():
     raise FileNotFoundError(f".env file not found at: {ENV_FILE}")
 
-if not LOCALES_DIR.exists():
-    LOCALES_DIR.mkdir(parents=True, exist_ok=True)
-
-if not IMAGES_DIR.exists():
-    IMAGES_DIR.mkdir(parents=True, exist_ok=True)
-
-if not LOGS_DIR.exists():
-    LOGS_DIR.mkdir(parents=True, exist_ok=True)
+for dir in [LOCALES_DIR, IMAGES_DIR, LOGS_DIR]:
+    dir.mkdir(parents=True, exist_ok=True)
 
 
 class Config(BaseSettings):
     TOKEN_BOT: SecretStr
 
     REDIS_URL: SecretStr
-    DB_URL: SecretStr
 
-    PROJECT_VERSION: str = "v1.0.0-latest"
+    WEBAPP_URL: SecretStr
+    BACKEND_URL: SecretStr
+    WEBAPP_URL_ADMIN: SecretStr
+
+    PROJECT_VERSION: str = "v2.0.1-latest"
+
+    STREAMER_USERNAME: str = "lemmychka"
     DEVELOPER_USERNAME: str = "Kitty_Ilnazik"
-    GITHUB_URL: str = "https://github.com/Kitty-Ilnazik/telegram-bot-template"
+    GITHUB_URL: str = "https://github.com/Lemmy-VTube/vastik-manager-telegram-bot"
 
     model_config = SettingsConfigDict(
         env_file=ENV_FILE,
@@ -48,10 +47,17 @@ class Config(BaseSettings):
 class ConfigTelegramBot(BaseSettings):
     ADMINS_ID: list[int] = Field(default_factory=lambda: [8042671345])
 
-    COMMANDS_DEFAULT: list[str] = Field(default_factory=lambda: ["start", "language"])
+    COMMANDS_DEFAULT: list[str] = Field(
+        default_factory=lambda: [
+            "start", "information", "tepropose_ideast", "links",
+            "references", "ent_personage", "schedule", "language",
+        ]
+    )
     COMMANDS_ADMIN: list[str] = Field(default_factory=lambda: ["admin"])
 
-    DEFAULT_LANGUAGE: str = "en"
+    VALID_DAYS: dict[int, int] = { 0: 7, 1: 6, 2: 5, 3: 4, 4: 3, 5: 2, 6: 0 }
+
+    DEFAULT_LANGUAGE: str = "ru"
 
     RATELIMIT_MAX_REQUESTS: int = 5
     RATELIMIT_WINDOW_SECONDS: int = 10
@@ -67,4 +73,4 @@ class ConfigLog(BaseSettings):
 
 config_telegram_bot = ConfigTelegramBot()
 config_log = ConfigLog()
-config = Config()
+config = Config() # type: ignore

@@ -1,7 +1,6 @@
 import asyncio
 from logging import getLogger
 
-from src.database import close_db, init_db
 from src.init_bot import bot, dp
 from src.utils.logger import setup_logging
 from src.utils.settings_bot import SettingsBotManager
@@ -11,8 +10,7 @@ logger = getLogger(__name__)
 
 async def main() -> None:
     setup_logging()
-    await init_db()
-    await SettingsBotManager(bot).setup()
+    #await SettingsBotManager(bot).setup()
 
     try:
         await dp.start_polling(bot)
@@ -20,7 +18,6 @@ async def main() -> None:
         logger.info("Бот остановлен")
     finally:
         await bot.session.close()
-        await close_db()
 
 
 def start() -> None:

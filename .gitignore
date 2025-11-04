@@ -16,9 +16,3 @@ logs/
 
 # ruff
 .ruff_cache/
-
-# Almebic
-alembic.ini
-
-# Database
-src/database/bot.db

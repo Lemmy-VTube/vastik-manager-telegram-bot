@@ -3,7 +3,7 @@ from aiogram.types import FSInputFile
 
 
 class Messenger:
-    def __init__(self, bot: Bot):
+    def __init__(self, bot: Bot) -> None:
         self.bot = bot
 
     async def send_message(self, user_id: int, msg: str) -> None:

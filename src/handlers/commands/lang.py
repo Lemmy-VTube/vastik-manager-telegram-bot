@@ -12,13 +12,16 @@ router = Router()
 
 @router.message(Command("language"))
 @router.callback_query(F.data == "change_language")
-async def start_command(message: Message | CallbackQuery, state: FSMContext):
+async def start_command(message: Message | CallbackQuery, state: FSMContext) -> None | bool:
     await state.clear()
     
-    photo = FSInputFile(IMAGES_DIR / "hello.jpg")
+    photo = FSInputFile(IMAGES_DIR / "old_version.jpg")
     msg = _("message_choose_language")
 
     if isinstance(message, CallbackQuery):
-        await message.message.edit_caption(caption=msg, reply_markup=change_language_keyboard())
+        await message.message.edit_caption( # type: ignore
+            caption=msg,
+            reply_markup=change_language_keyboard()
+        )
         return await message.answer()
     await message.reply_photo(photo=photo, caption=msg, reply_markup=change_language_keyboard())

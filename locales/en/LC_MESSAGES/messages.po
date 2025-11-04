@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2025-10-24 16:46+0300\n"
-"PO-Revision-Date: 2025-10-24 16:46+0300\n"
+"POT-Creation-Date: 2025-10-19 12:50+0300\n"
+"PO-Revision-Date: 2025-10-19 12:50+0300\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: en\n"
 "Language-Team: en <LL@li.org>\n"
@@ -18,57 +18,211 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.17.0\n"
 
-#: src/utils/settings_bot.py:30
+#: src/bot/utils/settings_bot.py:31
 msgid "bot_title"
-msgstr "Test Bot"
+msgstr "Vastik - Lemmy's Manager"
 
-#: src/utils/settings_bot.py:79
+#: src/bot/utils/settings_bot.py:77
 msgid "bot_description"
-msgstr "Test Bot - A basic template for starting Telegram bot development using aiogram 3.21 and above.\n\n"
+msgstr "👋 Hi! This is Lemmy's manager — your guide to her world!\n"
+"\n"
+"With this bot you can:\n"
+"• Get basic information\n"
+"• Find all of Lemmy's social networks\n"
+"• Access model references (and more!)\n"
+"• Learn about the lore and watch the lore video\n"
+"• Share your ideas: games, interactives, channel innovations\n"
+"\n"
 "🗃 Bot version: {project_version}\n"
-"👨‍💻 Developer: @{developer_username}\n"
-"💻 GitHub repository: {github_url}"
+"👨‍💻 Developer: @{developer_username}"
 
-#: src/utils/settings_bot.py:96
+#: src/bot/utils/settings_bot.py:91
 msgid "bot_short_description"
-msgstr "A basic template for Telegram bot development"
+msgstr "🌐 All of Lemmy's links, materials, games, and events in one place!"
 
 msgid "command_start"
-msgstr "🔄 Restart the bot"
+msgstr "🔄 Restart Bot"
+
+msgid "command_information"
+msgstr "ℹ️ Model Information"
+
+msgid "command_tepropose_ideast"
+msgstr "💡 Suggest an Idea"
+
+msgid "command_links"
+msgstr "🔗 Social Links"
+
+msgid "command_references"
+msgstr "📚 Model References"
+
+msgid "command_ent_personage"
+msgstr "👤 Character Introduction"
+
+msgid "command_schedule"
+msgstr "📅 Schedule"
 
 msgid "command_language"
-msgstr "🌍 Change language"
+msgstr "🌍 Change Language"
 
 msgid "command_admin"
-msgstr "⚙ Admin panel"
+msgstr "⚙ Admin Panel"
 
 msgid "button_language_ru"
-msgstr "🇷🇺 Russian"
+msgstr "🇷🇺 Русский"
 
 msgid "button_language_en"
 msgstr "🇺🇸 English"
 
+msgid "button_language_tt"
+msgstr "🇹🇷 Татарча"
+
+msgid "button_language_uk"
+msgstr "🇺🇦 Українська"
+
+msgid "button_language_uz"
+msgstr "🇺🇿 O‘zbekcha"
+
+msgid "button_language_kk"
+msgstr "🇰🇿 Қазақша"
+
+msgid "button_open_app"
+msgstr "🚀 Open App"
+
+msgid "button_old_version"
+msgstr "📝 Old Bot Version"
+
+msgid "button_information"
+msgstr "🗝 General Information"
+
+msgid "button_tepropose_ideast"
+msgstr "🪚 Suggest an Idea"
+
+msgid "button_links"
+msgstr "🔗 Links"
+
+msgid "button_references"
+msgstr "🖇 References"
+
+msgid "button_ent_personage"
+msgstr "📼 Character Lore"
+
+msgid "stop_chat_button"
+msgstr "End Chat"
+
 msgid "button_back_to_main_menu"
 msgstr "🔙 Back to Main Menu"
+
+msgid "button_back_to_old_version"
+msgstr "🔙 To Old Bot Version"
 
 msgid "message_limit_exceeded"
 msgstr "⚠️ You have exceeded the command limit. Blocked for {seconds_left} seconds."
 
 msgid "message_baned"
-msgstr "🚫 You are temporarily blocked for sending commands too frequently.\n"
+msgstr "🚫 You are temporarily blocked for too frequent commands.\n"
 "Try again in {seconds_left} seconds."
 
 msgid "message_choose_language"
 msgstr "🌍 Choose the language you want to switch to:"
 
 msgid "message_change_language_success"
-msgstr "The language has been successfully changed to {lang}."
+msgstr "Language has been successfully changed to {lang}."
 
 msgid "message_language_not_supported"
-msgstr "❌ This language is not supported yet."
+msgstr "❌ This language is not yet supported."
 
 msgid "message_welcome"
-msgstr "<b>Hello {full_name}, this is a basic template for Telegram bot development!🐾</b>\n\n"
+msgstr "<b>Hello {full_name}, this is manager Vastik!🐾</b>\n\n"
+"{birthday_message}"
+"I am Lemmy's manager, I help her gather all the information about the Lore, references and so on.\n\n"
+"<b>☁️ Here you can:</b>\n"
+"<blockquote>"
+"<i>🗝• View general information</i>\n\n"
+"<i>🔗• Learn about all of Lemmy's social networks</i>\n\n"
+"<i>🖇• View Lemmy's model references and more</i>\n\n"
+"<i>📼• Read the lore and watch the lore video</i>\n\n"
+"<i>🪚• Suggest your idea: games, channel innovations, interactives for the fandom</i>"
+"</blockquote>\n\n"
 "🗂 <b>Version:</b> <i>{project_version}</i>\n"
-"👨‍💻 <b>Developer:</b> <i><a href=\"https://t.me/{developer_username}\">Telegram</a></i>\n"
-"💻 <b>GitHub repository:</b> <i><a href=\"{github_url}\">GitHub</a></i>"
+"👨‍💻 <b>Developer:</b> <i><a href=\"https://t.me/{developer_username}\">Telegram</a></i>"
+
+msgid "message_old_version"
+msgstr "<b>Hello {full_name}, this is manager Vastik!🐾</b>\n\n"
+"{birthday_message}"
+"I am Lemmy's manager, I help her gather all the information about the Lore, references and so on.\n\n"
+"<b>☁️ Here you can:</b>\n"
+"<blockquote>"
+"<i>🗝• View general information</i>\n\n"
+"<i>🔗• Learn about all of Lemmy's social networks</i>\n\n"
+"<i>🖇• View Lemmy's model references and more</i>\n\n"
+"<i>📼• Read the lore and watch the lore video</i>\n\n"
+"<i>🪚• Suggest your idea: games, channel innovations, interactives for the fandom</i>"
+"</blockquote>\n\n"
+"<span class=\"tg-spoiler\">"
+"⚠️ Starting from version v2.0.0-beta, updates and new features are only available in the mini app!"
+"</span>\n\n"
+"🗂 <b>Version:</b> <i>{project_version}</i>\n"
+"👨‍💻 <b>Developer:</b> <i><a href=\"https://t.me/{developer_username}\">Telegram</a></i>"
+
+msgid "message_birthday_lemmy"
+msgstr "🎉 <b>Today is Lemmy's Birthday! 🐾</b>\n"
+"Let's congratulate her together and have a real celebration! 🥳\n\n"
+
+msgid "message_birthday_developer"
+msgstr "👨‍💻 <b>Today is the Developer's Birthday! 🎂✨</b>\n"
+"Let's send him kind words and congratulations! 🎂✨\n\n"
+
+msgid "message_information"
+msgstr "<b>✦︎Basic information about Lemmy:</b>\n\n"
+"<b>✧︎Name:</b> Lemmy, you can call her Lemmichka\n\n"
+"<b>✧︎Birthday:</b> 07.10.2004\n\n"
+"<b>✧︎Main Goal:</b>\n"
+"<blockquote>"
+"I strive for our community to grow even larger. More memes, more cool memories, more fun! 🎪"
+"</blockquote>\n\n"
+"<b>✧︎Wishes:</b>\n"
+"<blockquote>"
+"That we, the little mice, develop and be an active community, give bob!(⁠*⁠˘⁠︶⁠˘⁠*⁠)⁠.⁠｡⁠*⁠♡"
+"</blockquote>\n\n"
+
+msgid "message_links"
+msgstr "…⁠ᘛ⁠⁐‌⁠ᕐ⁠ᐷ…⁠ᘛ⁠⁐‌⁠ᕐ⁠ᐷ…⁠ᘛ⁠⁐‌⁠ᕐ⁠ᐷ…⁠ᘛ⁠⁐‌⁠ᕐ⁠ᐷ…⁠ᘛ⁠⁐‌⁠ᕐ⁠ᐷ\n"
+"<b>♡Lemmy's Social Networks:</b>\n\n"
+"<b>♣ Twitch Channel</b> - game streams, communication.\n"
+"<a href='{twitch_link}'>➻ click</a>\n\n"
+"<b>♠️ Telegram Channel</b> - stream announcements, off-topic, communication in the chat with viewers!\n"
+"<a href='{tg_channel_link}'>➻ click</a>\n\n"
+"<b>♣️ TikTok</b> - game streams, communication.\n"
+"<a href='{tiktok_link}'>➻ click</a>\n\n"
+"<b>♠️ YouTube</b> - game streams, communication.\n"
+"<a href='{youtube_link}'>➻ click</a>\n\n"
+"<b>♣️ VK Public Page</b> - game streams, communication.\n"
+"<a href='{public_vk_link}'>➻ click</a>\n\n"
+"<b>♠️Be sure to subscribe to our <b>Discord</b> channel!🤎</b>\n"
+"<a href='{discord_link}'>➻ click</a>\n\n"
+"<blockquote>"
+"<i>♟If you want to thank Lemmy outside the stream, you can use "
+"<a href='{dalink_link}'>Dalink</a>.\n"
+"<b>Thank you! ฅ⁠^⁠•⁠ﻌ⁠•⁠^⁠ฅ</b></i>"
+"</blockquote>"
+
+msgid "message_lor"
+msgstr "<b>Lore:</b>\n"
+"<blockquote>"
+"<i>They said the abandoned castle brought certain death to anyone who dared to seek it. Ancient darkness accumulated within its walls, and the forest around it seemed to hide the way back.\n"
+"Knights, treasure hunters, curious adventurers — all disappeared, hoping to find wealth or unravel the mystery. No one ever returned, and over time the castle became just a whisper in legends, where fear is stronger than any truth.</i>"
+"</blockquote>"
+
+msgid "message_propose_ideast"
+msgstr "<b>Suggest something new!🐾</b>\n\n"
+"<blockquote>"
+"♠️ Here you can write which game you want Lemmy to play. Share your ideas and startups regarding the channel and interactives with viewers."
+"</blockquote>\n\n"
+"<i>ღ︎ In general, write, don't be shy. I will pass everything on to Lemmy.</i>"
+
+msgid "message_stop_chat"
+msgstr "Press the button below to end the chat at any time."
+
+msgid "message_not_supported_references_old_version"
+msgstr "❌ References for the outdated version are not supported.\n"
+"Please open the new version"

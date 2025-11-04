@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2025-10-24 16:55+0300\n"
+"POT-Creation-Date: 2025-10-19 12:51+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,23 +17,91 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.17.0\n"
 
-#: src/middlewares/rate_limit.py:37
-msgid "message_baned"
+#: src/bot/callbacks/common.py:13
+msgid "old_version_message"
 msgstr ""
 
-#: src/middlewares/rate_limit.py:45
-msgid "message_limit_exceeded"
+#: src/bot/callbacks/lang.py:17
+msgid "error_language_not_supported"
 msgstr ""
 
-#: src/utils/settings_bot.py:30
-msgid "bot_title"
+#: src/bot/callbacks/lang.py:21
+msgid "success_change_language_message"
 msgstr ""
 
-#: src/utils/settings_bot.py:79
-msgid "bot_description"
+#: src/bot/handlers/commands/lang.py:16
+msgid "language_message"
 msgstr ""
 
-#: src/utils/settings_bot.py:96
-msgid "bot_short_description"
+#: src/bot/handlers/commands/start.py:16
+msgid "hello_message"
+msgstr ""
+
+#: src/bot/middlewares/rate_limit.py:46
+msgid "baned_message"
+msgstr ""
+
+#: src/bot/middlewares/rate_limit.py:57
+msgid "ban_message"
+msgstr ""
+
+#: src/bot/utils/settings_bot.py:30
+msgid "title_bot"
+msgstr ""
+
+#: src/bot/utils/settings_bot.py:79
+msgid "description_bot"
+msgstr ""
+
+#: src/bot/utils/settings_bot.py:96
+msgid "short_description_bot"
+msgstr ""
+
+#: src/bot/utils/keyboards/inline.py:11 src/bot/utils/keyboards/inline.py:51
+msgid "button_back_to_old_version"
+msgstr ""
+
+#: src/bot/utils/keyboards/inline.py:20
+msgid "button_open_app"
+msgstr ""
+
+#: src/bot/utils/keyboards/inline.py:20
+msgid "button_old_version"
+msgstr ""
+
+#: src/bot/utils/keyboards/inline.py:30
+msgid "button_information"
+msgstr ""
+
+#: src/bot/utils/keyboards/inline.py:30
+msgid "button_tepropose_ideast"
+msgstr ""
+
+#: src/bot/utils/keyboards/inline.py:30
+msgid "button_links"
+msgstr ""
+
+#: src/bot/utils/keyboards/inline.py:31
+msgid "button_references"
+msgstr ""
+
+#: src/bot/utils/keyboards/inline.py:31
+msgid "button_ent_personage"
+msgstr ""
+
+#: src/bot/utils/keyboards/inline.py:31
+msgid "command_schedule"
+msgstr ""
+
+#: src/bot/utils/keyboards/inline.py:32
+msgid "command_language"
+msgstr ""
+
+#: src/bot/utils/keyboards/inline.py:32 src/bot/utils/keyboards/inline.py:44
+msgid "button_back_to_main_menu"
+msgstr ""
+
+#: src/bot/utils/keyboards/inline.py:58
+msgid "button_reply_user"
 msgstr ""
 

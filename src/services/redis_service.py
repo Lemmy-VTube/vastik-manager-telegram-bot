@@ -8,7 +8,7 @@ from src.config import config
 
 
 class RedisService:
-    def __init__(self):
+    def __init__(self) -> None:
         self.redis = from_url(
             config.REDIS_URL.get_secret_value(),
             decode_responses=True

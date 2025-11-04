@@ -1,0 +1,228 @@
+# Uzbek translations for PROJECT.
+# Copyright (C) 2025 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2025-10-19 12:51+0300\n"
+"PO-Revision-Date: 2025-10-19 12:51+0300\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: uz\n"
+"Language-Team: uz <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: src/bot/utils/settings_bot.py:31
+msgid "bot_title"
+msgstr "Vastik - Lemmy Menedjeri"
+
+#: src/bot/utils/settings_bot.py:77
+msgid "bot_description"
+msgstr "👋 Salom! Lemmy menedjeri bilan aloqadasiz — uning dunyosiga yo'l ko'rsatgichingiz!\n"
+"\n"
+"Ushbu bot yordamida siz quyidagilarni qila olasiz:\n"
+"• Asosiy ma'lumotlarni biling\n"
+"• Lemmyning barcha ijtimoiy tarmoqlarini toping\n"
+"• Model referenslarini oching (va nafaqat!)\n"
+"• Lore bilan tanishing va lore videosini tomosha qiling\n"
+"• O'z g'oyalaringizni ulashing: o'yinlar, interaktivlar, kanal uchun yangiliklar\n"
+"\n"
+"🗃 Bot versiyasi: {project_version}\n"
+"👨‍💻 Dasturchi: @{developer_username}"
+
+#: src/bot/utils/settings_bot.py:91
+msgid "bot_short_description"
+msgstr "🌐 Lemmyning barcha havolalari, materiallari, o'yinlari va tadbirlari bir joyda!"
+
+msgid "command_start"
+msgstr "🔄 Botni qayta ishga tushirish"
+
+msgid "command_information"
+msgstr "ℹ️ Model haqida ma'lumot"
+
+msgid "command_tepropose_ideast"
+msgstr "💡 G'oya taklif qilish"
+
+msgid "command_links"
+msgstr "🔗 Ijtimoiy havolalar"
+
+msgid "command_references"
+msgstr "📚 Model referenslari"
+
+msgid "command_ent_personage"
+msgstr "👤 Personaj kirish"
+
+msgid "command_schedule"
+msgstr "📅 Jadval"
+
+msgid "command_language"
+msgstr "🌍 Tilni o'zgartirish"
+
+msgid "command_admin"
+msgstr "⚙ Administrator paneli"
+
+msgid "button_language_ru"
+msgstr "🇷🇺 Русский"
+
+msgid "button_language_en"
+msgstr "🇺🇸 English"
+
+msgid "button_language_tt"
+msgstr "🇹🇷 Татарча"
+
+msgid "button_language_uk"
+msgstr "🇺🇦 Українська"
+
+msgid "button_language_uz"
+msgstr "🇺🇿 O'zbekcha"
+
+msgid "button_language_kk"
+msgstr "🇰🇿 Қазақша"
+
+msgid "button_open_app"
+msgstr "🚀 Ilovani ochish"
+
+msgid "button_old_version"
+msgstr "📝 Eski bot versiyasi"
+
+msgid "button_information"
+msgstr "🗝 Umumiy ma'lumot"
+
+msgid "button_tepropose_ideast"
+msgstr "🪚 G'oya taklif qilish"
+
+msgid "button_links"
+msgstr "🔗 havolalar"
+
+msgid "button_references"
+msgstr "🖇 Referenslar"
+
+msgid "button_ent_personage"
+msgstr "📼 Personaj lor"
+
+msgid "stop_chat_button"
+msgstr "Chatni tugatish"
+
+msgid "button_back_to_main_menu"
+msgstr "🔙 Asosiy menyuga qaytish"
+
+msgid "button_back_to_old_version"
+msgstr "🔙 Eski bot versiyasi"
+
+msgid "message_limit_exceeded"
+msgstr "⚠️ Siz buyruqlar chegarasidan o'tdingiz. {seconds_left} soniya bloklanish."
+
+msgid "message_baned"
+msgstr "🚫 Siz haddan tashqari tez-tez buyruqlar berganingiz uchun vaqtincha bloklangansiz.\n"
+"{seconds_left} soniyadan keyin qayta urinib ko'ring."
+
+msgid "message_choose_language"
+msgstr "🌍 O'tmoqchi bo'lgan tilni tanlang:"
+
+msgid "message_change_language_success"
+msgstr "Til muvaffaqiyatli {lang} tiliga o'zgartirildi."
+
+msgid "message_language_not_supported"
+msgstr "❌ Bu til hozircha qo'llab-quvvatlanmaydi."
+
+msgid "message_welcome"
+msgstr "<b>Salom {full_name}, Vastik menedjeri bilan aloqadasiz!🐾</b>\n\n"
+"{birthday_message}"
+"Men Lemmy menedjeriman, unga Lor, referenslar va boshqalar haqida barcha ma'lumotlarni to'plashda yordam beraman.\n\n"
+"<b>☁️ Bu yerda siz:</b>\n"
+"<blockquote>"
+"<i>🗝• Umumiy ma'lumotlarni ko'rishingiz mumkin</i>\n\n"
+"<i>🔗• Lemmyning barcha ijtimoiy tarmoqlari haqida bilib olishingiz mumkin</i>\n\n"
+"<i>🖇• Lemmy model referenslarini va boshqalarni ko'rishingiz mumkin</i>\n\n"
+"<i>📼• Lorni o'qishingiz va lore videosini tomosha qilishingiz mumkin</i>\n\n"
+"<i>🪚• O'z g'oyangizni taklif qilishingiz mumkin: o'yinlar, kanal uchun yangiliklar, fandom uchun interaktivlar</i>"
+"</blockquote>\n\n"
+"🗂 <b>Versiya:</b> <i>{project_version}</i>\n"
+"👨‍💻 <b>Dasturchi:</b> <i><a href=\"https://t.me/{developer_username}\">Telegram</a></i>"
+
+msgid "message_old_version"
+msgstr "<b>Salom {full_name}, Vastik menedjeri bilan aloqadasiz!🐾</b>\n\n"
+"{birthday_message}"
+"Men Lemmy menedjeriman, unga Lor, referenslar va boshqalar haqida barcha ma'lumotlarni to'plashda yordam beraman.\n\n"
+"<b>☁️ Bu yerda siz:</b>\n"
+"<blockquote>"
+"<i>🗝• Umumiy ma'lumotlarni ko'rishingiz mumkin</i>\n\n"
+"<i>🔗• Lemmyning barcha ijtimoiy tarmoqlari haqida bilib olishingiz mumkin</i>\n\n"
+"<i>🖇• Lemmy model referenslarini va boshqalarni ko'rishingiz mumkin</i>\n\n"
+"<i>📼• Lorni o'qishingiz va lore videosini tomosha qilishingiz mumkin</i>\n\n"
+"<i>🪚• O'z g'oyangizni taklif qilishingiz mumkin: o'yinlar, kanal uchun yangiliklar, fandom uchun interaktivlar</i>"
+"</blockquote>\n\n"
+"<span class=\"tg-spoiler\">"
+"⚠️ Endi v2.0.0-beta versiyasidan boshlab yangilanishlar va yangi funksiyalar faqat mini ilovada yangilanadi!"
+"</span>\n\n"
+"🗂 <b>Versiya:</b> <i>{project_version}</i>\n"
+"👨‍💻 <b>Dasturchi:</b> <i><a href=\"https://t.me/{developer_username}\">Telegram</a></i>"
+
+msgid "message_birthday_lemmy"
+msgstr "🎉 <b>Bugun — Lemmy tug'ilgan kuni! 🐾</b>\n"
+"Uni birgalikda tabriklaymiz va haqiqiy bayram quramiz! 🥳\n\n"
+
+msgid "message_birthday_developer"
+msgstr "👨‍💻 <b>Bugun — Dasturchining tug'ilgan kuni! 🎂✨</b>\n"
+"Unga mehribon so'zlar va tabriklar yuboramiz! 🎂✨\n\n"
+
+msgid "message_information"
+msgstr "<b>✦︎Lemmy haqida asosiy ma'lumot:</b>\n\n"
+"<b>✧︎Ism:</b> Lemmy, Lemmichka deb chaqirish mumkin\n\n"
+"<b>✧︎Tug'ilgan kun:</b> 07.10.2004\n\n"
+"<b>✧︎Asosiy maqsad:</b>\n"
+"<blockquote>"
+"Men jamiyatimiz yanada kattaroq bo'lishiga intilaman. Ko'proq memlar, ko'proq ajoyib xotiralar, ko'proq quvonch! 🎪"
+"</blockquote>\n\n"
+"<b>✧︎Orzular:</b>\n"
+"<blockquote>"
+"Biz, kichkina sichqonchalar, rivojlanaylik va faol jamiyat bo'laylik, bob ber!(⁠*⁠˘⁠︶⁠˘⁠*⁠)⁠.⁠｡⁠*⁠♡"
+"</blockquote>\n\n"
+
+msgid "message_links"
+msgstr "…⁠ᘛ⁠⁐‌⁠ᕐ⁠ᐷ…⁠ᘛ⁠⁐‌⁠ᕐ⁠ᐷ…⁠ᘛ⁠⁐‌⁠ᕐ⁠ᐷ…⁠ᘛ⁠⁐‌⁠ᕐ⁠ᐷ…⁠ᘛ⁠⁐‌⁠ᕐ⁠ᐷ\n"
+"<b>♡Lemmyning ijtimoiy tarmoqlari:</b>\n\n"
+"<b>♣ Twitch kanali</b> - o'yinlar bo'yicha strimlar, muloqot.\n"
+"<a href='{twitch_link}'>➻ bosish</a>\n\n"
+"<b>♠️ Telegram kanali</b> - strimlar e'lonlari, offtop, tomoshabinlar bilan suhbat!\n"
+"<a href='{tg_channel_link}'>➻ bosish</a>\n\n"
+"<b>♣️ TikTok</b> - o'yinlar bo'yicha strimlar, muloqot.\n"
+"<a href='{tiktok_link}'>➻ bosish</a>\n\n"
+"<b>♠️ YouTube</b> - o'yinlar bo'yicha strimlar, muloqot.\n"
+"<a href='{youtube_link}'>➻ bosish</a>\n\n"
+"<b>♣️ VK publika</b> - o'yinlar bo'yicha strimlar, muloqot.\n"
+"<a href='{public_vk_link}'>➻ bosish</a>\n\n"
+"<b>♠️Albatta bizning <b>Discord</b> kanalimizga obuna bo'ling!🤎</b>\n"
+"<a href='{discord_link}'>➻ bosish</a>\n\n"
+"<blockquote>"
+"<i>♟Agar siz Lemmyga strimdan tashqarida minnatdorchilik bildirmoqchi bo'lsangiz, "
+"<a href='{dalink_link}'>Dalink</a> yordamida qila olasiz.\n"
+"<b>Rahmat! ฅ⁠^⁠•⁠ﻌ⁠•⁠^⁠ฅ</b></i>"
+"</blockquote>"
+
+msgid "message_lor"
+msgstr "<b>Lor:</b>\n"
+"<blockquote>"
+"<i>Deyishlaricha, tashlandiq qal'a uni izlashga jur'at etgan har bir kishiga muqarrar o'lim olib keladi. Uning devorlarida qadimgi zulmat to'plangan va atrofdagi o'rmon orqaga yo'lni o'zi yashirgandek edi.\n"
+"Ritsarlar, xazina izlovchilar, qiziquvchan botirlar - barcha boylik topish yoki sirni ochish umidida yo'q bo'lib ketdilar. Hech kim qaytib kelmadi va vaqt o'tishi bilan qal'a afsonalarda shivirlashgina bo'lib qoldi, qayerda qo'rquq har qanday haqiqatdan kuchliroq.</i>"
+"</blockquote>"
+
+msgid "message_propose_ideast"
+msgstr "<b>Yangi narsa taklif qiling!🐾</b>\n\n"
+"<blockquote>"
+"♠️ Bu yerda siz Lemmy qaysi o'yinni o'ynashini xohlasangiz, yozishingiz mumkin. Kanal va tomoshabinlar bilan interaktivlar haqidagi g'oyalaringiz va startaplaringiz haqida gapirib bering."
+"</blockquote>\n\n"
+"<i>ღ︎ Umuman, yozing, uyalmang. Men hammasini Lemmyga yetkazaman.</i>"
+
+msgid "message_stop_chat"
+msgstr "Chatni istalgan vaqtda tugatish uchun quyidagi tugmani bosing."
+
+msgid "message_not_supported_references_old_version"
+msgstr "❌ Eski versiya referenslari qo'llab-quvvatlanmaydi.\n"
+"Iltimos, yangi versiyani oching"
