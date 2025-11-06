@@ -1,7 +1,7 @@
 import asyncio
 from logging import getLogger
 
-from src.init_bot import bot, dp
+from src.init_bot import bot, broker, dp
 from src.utils.logger import setup_logging
 from src.utils.settings_bot import SettingsBotManager
 
@@ -13,10 +13,12 @@ async def main() -> None:
     await SettingsBotManager(bot).setup()
 
     try:
+        await broker.start()
         await dp.start_polling(bot)
     except asyncio.CancelledError:
         logger.info("Бот остановлен")
     finally:
+        await broker.stop()
         await bot.session.close()
 
 

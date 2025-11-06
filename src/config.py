@@ -27,6 +27,7 @@ class Config(BaseSettings):
     TOKEN_BOT: SecretStr
 
     REDIS_URL: SecretStr
+    RABBITMQ_URL: SecretStr
 
     WEBAPP_URL: SecretStr
     BACKEND_URL: SecretStr
@@ -45,7 +46,7 @@ class Config(BaseSettings):
 
 
 class ConfigTelegramBot(BaseSettings):
-    ADMINS_ID: list[int] = Field(default_factory=lambda: [8042671345])
+    ADMINS_ID: list[int] = Field(default_factory=lambda: [8042671345, 1283679412])
 
     COMMANDS_DEFAULT: list[str] = Field(
         default_factory=lambda: [
