@@ -37,7 +37,7 @@ async def handle_twitch_stream_event(data: TwitchStreamEvent):
         reply_markup = watch_on_twitch_keyboard(user_name)
     elif event == "stream_offline":
         message = (
-            f"🛑 {user_name} завершил стрим.\n"
+            f"🛑 {user_name} завершила стрим.\n"
             f"Канал: twitch.tv/{user_name}"
         )
     else:
