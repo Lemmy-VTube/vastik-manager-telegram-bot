@@ -60,3 +60,11 @@ def admin_menu_keyboard() -> InlineKeyboardMarkup:
         text=[_("button_open_admin")],
         web_app=[config.WEBAPP_URL_ADMIN.get_secret_value()],
     )
+
+
+def watch_on_twitch_keyboard(user_name: str) -> InlineKeyboardMarkup:
+    return keyboard_builder.inline(
+        text=[_("button_watch_on_twitch")],
+        url=[f"https://twitch.tv/{user_name}"],
+        sizes=1
+    )
