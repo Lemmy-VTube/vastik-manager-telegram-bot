@@ -92,6 +92,9 @@ msgstr "🚀 Відкрити додаток"
 msgid "button_old_version"
 msgstr "📝 Стара версія бота"
 
+msgid "button_watch_on_twitch"
+msgstr "🚀 Дивитися на Twitch"
+
 msgid "button_information"
 msgstr "🗝 Загальна інформація"
 

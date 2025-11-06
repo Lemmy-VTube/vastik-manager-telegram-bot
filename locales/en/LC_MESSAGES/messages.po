@@ -91,6 +91,9 @@ msgstr "🚀 Open App"
 msgid "button_old_version"
 msgstr "📝 Old Bot Version"
 
+msgid "button_watch_on_twitch"
+msgstr "🚀 Watch on Twitch"
+
 msgid "button_information"
 msgstr "🗝 General Information"
 

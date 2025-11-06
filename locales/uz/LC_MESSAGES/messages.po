@@ -91,6 +91,9 @@ msgstr "🚀 Ilovani ochish"
 msgid "button_old_version"
 msgstr "📝 Eski bot versiyasi"
 
+msgid "button_watch_on_twitch"
+msgstr "🚀 Twitchda tomosha qilish"
+
 msgid "button_information"
 msgstr "🗝 Umumiy ma'lumot"
 

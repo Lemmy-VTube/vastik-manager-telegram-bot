@@ -91,6 +91,9 @@ msgstr "🚀 Кушымтаны ачарга"
 msgid "button_old_version"
 msgstr "📝 Иске бот версиясе"
 
+msgid "button_watch_on_twitch"
+msgstr "🚀 Twitch-та карарга"
+
 msgid "button_information"
 msgstr "🗝 Гомуми мәгълүмат"
 

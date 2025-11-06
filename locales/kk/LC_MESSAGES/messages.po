@@ -91,6 +91,9 @@ msgstr "🚀 Қолданбаны ашу"
 msgid "button_old_version"
 msgstr "📝 Ескі бот нұсқасы"
 
+msgid "button_watch_on_twitch"
+msgstr "🚀 Twitch-те қарау"
+
 msgid "button_information"
 msgstr "🗝 Жалпы ақпарат"
 

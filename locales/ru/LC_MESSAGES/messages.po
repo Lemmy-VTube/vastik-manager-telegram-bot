@@ -92,6 +92,9 @@ msgstr "🚀 Открыть приложение"
 msgid "button_open_admin"
 msgstr "🚀 Открыть админ панель"
 
+msgid "button_watch_on_twitch"
+msgstr "🚀 Смотреть на Twitch"
+
 msgid "button_old_version"
 msgstr "📝 Старая версия бота"
 
