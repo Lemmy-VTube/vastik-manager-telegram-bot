@@ -1,52 +1,47 @@
-from dataclasses import dataclass
-from datetime import datetime
 from logging import getLogger
 from typing import Optional
 
 import aiohttp
 
 from src.config import config
+from src.schemas import ScheduleRead
 
 logger = getLogger(__name__)
-
-
-@dataclass
-class Schedule:
-    photo_id: str
-    message_streamer_text: str
-    updated_at: datetime
 
 
 class ScheduleService:
     def __init__(self) -> None:
         self.base_url: str = config.BACKEND_URL.get_secret_value()
-    
-    async def get_schedule(self) -> Optional[Schedule]:
-        url = f"{self.base_url}/schedule"
+
+    async def get_schedule(self) -> Optional[ScheduleRead]:
+        url = f"{self.base_url}/v1/schedule"
         logger.debug(f"Requesting schedule from backend: {url}")
 
         try:
             async with aiohttp.ClientSession() as session:
                 async with session.get(url) as response:
-                    if response.status != 200:
-                        logger.warning(f"Backend returned {response.status} for schedule {id}")
+                    status = response.status
+                    logger.debug(f"Response status: {status}")
+
+                    if status != 200:
+                        logger.warning(f"Backend returned {status} while fetching schedule.")
                         return None
 
                     data = await response.json()
-                    logger.debug(f"Response data: {data}")
-                    schedule_data = data.get("data")
+                    logger.debug(f"Raw response data: {data}")
+
+                    schedule_data = data.get("data", {}).get("schedule")
                     if not schedule_data:
-                        logger.debug("No schedule data found in response")
+                        logger.debug("Schedule is empty or null in backend response.")
                         return None
 
-                    updated_at = datetime.fromisoformat(schedule_data["updated_at"])
-                    schedule = Schedule(
-                        photo_id=schedule_data["photo_id"],
-                        message_streamer_text=schedule_data["message_streamer_text"],
-                        updated_at=updated_at,
-                    )
-                    logger.debug(f"Schedule parsed successfully: {schedule}")
-                    return schedule
+                    try:
+                        schedule = ScheduleRead(**schedule_data)
+                        logger.debug(f"Schedule parsed successfully: {schedule}")
+                        return schedule
+                    except Exception as e:
+                        logger.exception(f"Error while parsing schedule data: {e}")
+                        return None
         except aiohttp.ClientError as e:
             logger.error(f"Network error while fetching schedule: {e}")
             return None
